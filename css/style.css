@@ -1,0 +1,142 @@
+body{
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:antiquewhite;
+    margin-bottom: 30px;
+    padding:10px 20px;
+}
+
+.header-left{
+    display: flex;        /* ロゴとPortfolioを横並び */
+    align-items: center;  /* ロゴと文字の高さを揃える */
+    gap: 15px;            /* ロゴと文字の間隔 */
+}
+
+.header-logo{
+    width: 80px;
+}
+
+#hero{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+.hero-slider{
+    width:300px;
+    height:300px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 30px;
+}
+
+.slide{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+
+.slide.active{
+    display: block;
+}
+
+#about{
+    background-color:antiquewhite;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.menu-title{
+    color: gray;
+    text-align: center;
+}
+
+.about1{
+    background-color: white;
+    margin:10px 10px;
+    padding: 5px 10px;
+}
+
+.about2{
+    background-color: white;
+    margin:10px 10px;
+    padding: 5px 10px;
+}
+
+#works{
+    background-color:antiquewhite;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.project-card{
+    background-color: white;
+    display: flex;                  /* デモ動画と文章を横並び */
+    gap: 40px;                      /* 左右の隙間 */
+    padding: 30px;                  /* カード内側の余白 */
+    margin-bottom: 30px;            /* カード同士の隙間 */
+    align-items: center;            /* 縦位置を中央揃え */
+}
+
+.project-demo{
+    width: 380px;                   /* デモ動画枠の横幅 */
+    height: 180px;                  /* デモ動画枠の高さ */
+    background-color: #bfbfbf;      /* グレー背景 */
+    display: flex;                  /* 中央配置用 */
+    justify-content: center;        /* 横中央 */
+    align-items: center;            /* 縦中央 */
+    font-size: 28px;                /* 文字サイズ */
+    flex-shrink: 0;                 /* 横幅を縮ませない */
+}
+
+.project-text{
+    flex: 1;                        /* 残りの幅を文章側に使う */
+}
+
+
+#skills{
+    background-color:antiquewhite;
+    margin-bottom: 30px;
+    padding:30px;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-card{
+    background-color: white;
+    width: 590px;
+    min-height: 280px;  
+    padding:20px;
+    box-sizing: border-box;
+}
+
+#works h3{
+    margin-bottom: 0;               
+}
+
+.skills-card ul{
+    list-style-position: inside;
+    text-align: left;
+}
+
+#skills h3{
+    margin-bottom: 0;               
+}
+#contact{
+    background-color:antiquewhite;
+    margin-bottom: 30px;
+    padding:10px;
+
+}

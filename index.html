@@ -15,7 +15,7 @@
             <div class="header-title">Portfolio</div>
         </div>
         <div class="header-menu">
-            <a href="#about">about</a>
+            <a href="#about">about me</a>
             <a href="#works">works</a>
             <a href="#skills">skills</a>
             <a href="#contact">contact</a>
@@ -47,6 +47,9 @@
                 </p>
             </div>
         </div>
+        <div class="hero-deco-tree">
+            <img src="portfolio-images/tree.png">
+        </div>
     </div>
 
     <div id="about">
@@ -72,7 +75,7 @@
         </div>
         
             <div class="now-work">
-                <ul class="now-work-toukei">
+                <ul class="now-work-card">
                     <p>【統計分析】<br>
                         SPSS、Excelを活用した</p>
                     <li>組織分析</li>
@@ -80,7 +83,7 @@
                     <li>ヒューマンリスク分析</li>
                     <li>分析レポート作成</li>
                 </ul>
-                <ul class="now-work-design"> 
+                <ul class="now-work-card"> 
                     <p>【デザイン制作】</p>
                     <li>ホームページ修正</li>
                     <li>ワイヤーフレーム作成</li>
@@ -90,7 +93,7 @@
                     <li>動画編集<br>
                     （インタビュー/セミナー動画）</li>
                 </ul>
-                <ul class="now-work-project">
+                <ul class="now-work-card">
                     <p>【プロジェクト管理】<br>
                     年間9回のセミナー運営における</p>
                     <li>企画立案</li>
@@ -101,38 +104,64 @@
                 </ul>
         </div>
     </div>
-    <div id="works">
-        <p class="menu-title">works</p>
-        <h3>project01：性格診断（あなたをわんこに例えると？）</h3>
-        <div class="project-card">
-            <div class="project-demo">デモ動画</div>
-            <div class="project-text">
-                <p>作成に至った経緯：<br>
-                    現職で人財育成のための診断サービスを提供しており、自分でも企画から設計、実装まで一貫して診断コンテンツを作ってみたいと考えたことが制作のきっかけです。
-                    結果表示では単に犬あるあると人間の性格傾向を組み合わせるだけでなく、実際の犬の特徴をもとにしたクスッと笑える豆知識も加えています。
-                    設問は回答しやすい2択形式とし、各タイプの定義を決めた上で重要な設問には得点の重み付けを行い、診断結果に反映されるよう設計しました。
-                </p>
-                <p>HTML/CSS・・・</p>
-                <!--サイトを見る、GitHubのリンクを追加する-->
-                <a href="#">サイトを見る</a>
-                <a href="#">GitHub</a>
-            </div>
-        </div>
+<div id="works">
+    <p class="menu-title">works</p>
 
-        <h3>project02：AI画像生成（イラスト風）</h3>
+    <div class="project-block project-left">
+        <h3>project01：性格診断（あなたをわんこに例えると？）</h3>
+
         <div class="project-card">
             <div class="project-demo">デモ動画</div>
+
             <div class="project-text">
-                <!--作成に至った経緯あとで考え直す-->
-                <p>作成に至った経緯：<br>
-                    何か書く</p>
-                <p>HTML/CSS・・・</p>
-                <!--サイトを見る、GitHubのリンクを追加する-->
+                <p>＜概要＞<br>
+                    犬の性格や行動パターンを人間の性格に置き換えた、<br>
+                    2択形式の性格診断アプリです。
+                </p>
+
+                <p>＜工夫した点＞<br>
+                    ・犬タイプごとに性格の定義を設定<br>
+                    ・重要な設問に重み付けを行い診断結果へ反映<br>
+                    ・犬あるあるの豆知識を加え、クスッと笑える内容を意識
+                </p>
+
+                <p>＜使用技術＞<br>
+                    HTML / CSS / JavaScript / Figma
+                </p>
+
                 <a href="#">サイトを見る</a>
                 <a href="#">GitHub</a>
             </div>
         </div>
     </div>
+
+    <div class="project-block project-right">
+        <h3>project02：AI画像生成（イラスト風）</h3>
+
+        <div class="project-card reverse">
+            <div class="project-text">
+                <p>＜概要＞<br>
+                    <br>
+                </p>
+
+                <p>＜工夫した点＞<br>
+                    ・<br>
+                    ・<br>
+                    ・
+                </p>
+
+                <p>＜使用技術＞<br>
+                    HTML / CSS / JavaScript / Figma
+                </p>
+
+                <a href="#">サイトを見る</a>
+                <a href="#">GitHub</a>
+            </div>
+
+            <div class="project-demo">デモ動画</div>
+        </div>
+    </div>
+</div>
 
     <div id="skills">
         <p class="menu-title">skills</p>
@@ -195,8 +224,16 @@
 
     <div id="contact">
         <p class="menu-title">contact</p>
-        <p>GitHub：</p>
-        <p>メールアドレス：</p>
+        <div class="contact-text">
+            <p>
+                GitHub：<a href="https://github.com/haran-shiba/tsubasa-portfolio.git">https://github.com/haran-shiba/tsubasa-portfolio.git</a>
+            </p>
+            <p>メールアドレス：</p>
+            <div class="contact-deco-tree">
+                <img src="portfolio-images/tree.png">
+            </div>
+        </div>
+
     </div>
     <div id="footer">
         <p>© 2026 Tsubasa Kanematsu Portfolio</p>

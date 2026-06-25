@@ -5,9 +5,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:antiquewhite;
-    margin-bottom: 30px;
+    background-color:rgb(246, 173, 77);
     padding:10px 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 10;
+    box-sizing: border-box;
 }
 
 .header-left{
@@ -26,6 +31,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 80px;
+    position: relative;
 }
 
 .hero-slider{
@@ -50,6 +56,18 @@ body{
     display: block;
 }
 
+.hero-deco-tree{
+    position: absolute;        /* hero内で自由配置 */
+    right: 15%;              /* 右から120px */
+    bottom: 10px;              /* 下から30px */
+    width: 100px;              /* 木の大きさ */
+}
+
+.hero-deco-tree img{
+    width: 100%;               /* 親の120pxに合わせる */
+    height: auto;              /* 縦横比を維持 */
+    display: block;            /* 余計な隙間を防ぐ */
+}
 
 #about{
     background-color:antiquewhite;
@@ -98,71 +116,88 @@ body{
 
 .now-work{
     display: flex;
-
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-.now-work-toukei{
-    border:2px solid rgb(245, 192, 128);
-    padding: 10px 10px;
-    margin:0 100px;
+.now-work-card{
+    width: 300px;
+    min-height: 240px;
+    border: 2px solid rgb(245, 192, 128);
+    padding: 25px;
+    box-sizing: border-box;
     text-align: left;
 }
-
-.now-work-design{
-    border:2px solid rgb(245, 192, 128);
-    padding: 10px 10px;
-    margin:0 100px;
-    text-align: left;
-}
-
-.now-work-project{
-    border:2px solid rgb(245, 192, 128);
-    padding: 10px 10px;
-    margin:0 100px;
-    text-align: left
-}
-
 
 #works{
-    background-color:antiquewhite;
+    background-color: white;
     margin-bottom: 30px;
     padding: 30px;
 }
 
+.project-block{
+    margin-bottom: 80px;              /* project同士の縦間隔 */
+}
+
+.project-block h3{
+    background-color: antiquewhite;
+    padding: 25px;
+    margin-bottom: 50px;              /* タイトルと中身の間 */
+}
+
+.project-left h3{
+    width: 55%;
+    text-align: center;
+}
+
+.project-right h3{
+    width: 55%;
+    margin-left: auto;
+    text-align: center;
+}
+
 .project-card{
-    background-color: white;
-    display: flex;                  /* デモ動画と文章を横並び */
-    gap: 40px;                      /* 左右の隙間 */
-    padding: 30px;                  /* カード内側の余白 */
-    margin-bottom: 30px;            /* カード同士の隙間 */
-    align-items: center;            /* 縦位置を中央揃え */
+    display: flex;                    /* デモ動画と文章を横並び */
+    justify-content: center;          /* 全体を中央寄せ */
+    align-items: center;              /* 高さを中央揃え */
+    gap: 40px;                        /* デモ動画と文章の間隔 */
+}
+
+.project-card.reverse{
+    justify-content: center;          /* project02も中央寄せ */
 }
 
 .project-demo{
-    width: 380px;                   /* デモ動画枠の横幅 */
-    height: 180px;                  /* デモ動画枠の高さ */
-    background-color: #bfbfbf;      /* グレー背景 */
-    display: flex;                  /* 中央配置用 */
-    justify-content: center;        /* 横中央 */
-    align-items: center;            /* 縦中央 */
-    font-size: 28px;                /* 文字サイズ */
-    flex-shrink: 0;                 /* 横幅を縮ませない */
+    width: 520px;
+    height: 260px;
+    background-color: #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    flex-shrink: 0;                   /* 枠が縮まないようにする */
 }
 
 .project-text{
-    flex: 1;                        /* 残りの幅を文章側に使う */
+    width: 420px;
+    font-size: 16px;
+    line-height: 1.5;
 }
-
 
 #skills{
     background-color:antiquewhite;
     margin-bottom: 30px;
     padding:30px;
+    
 }
 .skills-container{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-card{
@@ -189,5 +224,26 @@ body{
     background-color:antiquewhite;
     margin-bottom: 30px;
     padding:10px;
+    position: relative;
+}
 
+.contact-text{
+    padding-left:15%;
+}
+
+.contact-deco-tree{
+    position: absolute;        /* hero内で自由配置 */
+    right: 15%;              /* 右から120px */
+    bottom: 10px;              /* 下から30px */
+    width: 60px;              /* 木の大きさ */
+}
+
+.contact-deco-tree img{
+    width: 100%;               /* 親の120pxに合わせる */
+    height: auto;              /* 縦横比を維持 */
+    display: block;            /* 余計な隙間を防ぐ */
+}
+
+#footer{
+    text-align: center;
 }
